@@ -11,11 +11,12 @@ public class cardGame {
         for(int i = 1; i <= num; i++)
             card.offer(i);
 
-        while(num != 1){
+        while(true){
             card.remove();
             card.add(card.poll());
-            num--;
+            if(card.size() == 1) break;
         }
         System.out.println(card.poll());
+        br.close();
     }
 }

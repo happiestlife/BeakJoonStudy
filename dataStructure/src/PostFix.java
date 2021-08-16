@@ -1,9 +1,9 @@
 import java.io.*;
 import java.util.Stack;
 public class PostFix {
-    static double calculate(double operand1, double operand2, char operation){
+    static double calculate(double operand1, double operand2, char operator){
         double result = 0;
-        switch(operation){
+        switch(operator){
             case '+':
                 result = operand1 + operand2;
                 break;

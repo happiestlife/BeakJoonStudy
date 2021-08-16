@@ -4,10 +4,10 @@ import java.io.*;
 import java.util.*;
 import java.util.Queue;
 
-public class Main {
+public class Josephus {
     int num;
     boolean isUsed;
-    public Main(int num){
+    public Josephus(int num){
         this.num = num;
         isUsed = false;
     }
@@ -27,9 +27,9 @@ public class Main {
         Queue<Integer> result = new LinkedList<>();
         int size = Integer.parseInt(stk.nextToken());
         int type = Integer.parseInt(stk.nextToken());
-        Main num[] = new Main[size];
+        Josephus num[] = new Josephus[size];
         for(int i = 0; i < size; i++)
-            num[i] = new Main(i+1);
+            num[i] = new Josephus(i+1);
 
         int index = -1;
         for(int i = 0; i < size; i++){
@@ -44,5 +44,6 @@ public class Main {
             num[index].isUsed = true;
         }
         print(result);
+        br.close();
     }
 }
