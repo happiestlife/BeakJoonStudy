@@ -2,6 +2,5 @@
 괄호검사 : https://www.acmicpc.net/problem/9012
 큐2 : https://www.acmicpc.net/problem/18258
 스택 : https://www.acmicpc.net/problem/10828
-
 카드 : https://www.acmicpc.net/problem/2164
 후위 표기식2 : https://www.acmicpc.net/problem/1935
