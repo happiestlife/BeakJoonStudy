@@ -30,13 +30,13 @@ public class P22942 {
 
         int makePositive = 1000000;
         int maxRadius = 20000;
-        int condition = makePositive+maxRadius;
+        int condition = makePositive + maxRadius;
         boolean isSuccess = true;
         int parenthesisCheck = 0;
         char circles[] = new char[endPoint+condition];
         for(int i = 0; i < circleNum; i++){
             circles[circlesData[i].start - 1 + condition] = '(';
-            circles[circlesData[i].end - 1+ condition] = ')';
+            circles[circlesData[i].end - 1 + condition] = ')';
 
             for(int j = circlesData[i].start  + condition; j < circlesData[i].end-1  + condition; j++)
                 if (circles[j] == '(' || circles[j] == ')')
