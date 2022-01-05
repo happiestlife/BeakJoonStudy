@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
- 
+
 public class P1629 {
     static long get_n_k(long a, long b, long c){
         if(b == 1)
