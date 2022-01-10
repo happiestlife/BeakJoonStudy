@@ -1,4 +1,4 @@
-//https://www.acmicpc.net/problem/1158
+package Else;//https://www.acmicpc.net/problem/1158
 
 import java.io.*;
 import java.util.*;

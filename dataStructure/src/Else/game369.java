@@ -1,3 +1,5 @@
+package Else;
+
 import java.util.Scanner;
 public class game369 {
 

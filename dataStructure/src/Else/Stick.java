@@ -1,13 +1,12 @@
+package Else;//https://www.acmicpc.net/problem/10799
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Stack;
 
 
-public class Main {
+public class Stick {
     public static void main(String args[]) throws IOException {
-        Stack<Integer> stickStack = new Stack<>();
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = br.readLine();
 
@@ -17,7 +16,6 @@ public class Main {
         for(int i = 0; i < input.length(); i++){
             char c = input.charAt(i);
             if(c == '(') {
-                stickStack.push(0);
                 stickNum++;
             }
             else if(c == ')'){
@@ -34,5 +32,6 @@ public class Main {
         }
 
         System.out.println(sticksPart);
+        br.close();
     }
 }

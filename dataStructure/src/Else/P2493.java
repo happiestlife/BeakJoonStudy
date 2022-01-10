@@ -1,4 +1,4 @@
-//https://www.acmicpc.net/problem/2493
+package Else;//https://www.acmicpc.net/problem/2493
 
 import java.io.*;
 import java.util.StringTokenizer;

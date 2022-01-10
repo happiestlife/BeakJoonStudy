@@ -1,4 +1,4 @@
-//https://www.acmicpc.net/submit/2630/33586490
+package Else;//https://www.acmicpc.net/submit/2630/33586490
 
 import java.io.BufferedReader;
 import java.io.IOException;

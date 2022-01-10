@@ -1,3 +1,5 @@
+package Else;//https://www.acmicpc.net/problem/1874
+
 import java.io.*;
 import java.util.LinkedList;
 import java.util.Queue;

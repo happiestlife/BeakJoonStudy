@@ -1,4 +1,4 @@
-//https://www.acmicpc.net/problem/1918
+package Else;//https://www.acmicpc.net/problem/1918
 
 import java.io.*;
 import java.util.Stack;
