@@ -2,6 +2,7 @@ package Sliver;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
@@ -62,7 +63,7 @@ public class P17225 {
         int number = 1, smnum = 0, jsnum = 0;
         while (!mheap.isEmpty()) {
             Order o = mheap.poll();
-            
+
             if(o.color.equals("B")) sm[smnum++] = number;
             else js[jsnum++] = number;
 
