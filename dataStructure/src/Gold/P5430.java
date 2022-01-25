@@ -6,6 +6,7 @@ import java.util.*;
 public class P5430 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int T = Integer.parseInt(br.readLine());
 
         for (int i = 0; i < T; i++) {
@@ -37,18 +38,20 @@ public class P5430 {
                 }
             }
 
-            if(isFail) System.out.println("error");
+            if(isFail) bw.write("error\n");
             else{
-                System.out.print("[");
+                bw.write("[");
                 while(!arr.isEmpty()){
-                   if(forward)System.out.print(arr.pollFirst());
-                   else System.out.print(arr.pollLast());
+                   if(forward)bw.write(arr.pollFirst());
+                   else bw.write(arr.pollLast());
                    if(arr.isEmpty()) break;
-                   System.out.print(",");
+                    bw.write(",");
                 };
-                System.out.println("]");
+                bw.write("]\n");
             }
         }
+        bw.flush();
+        bw.close();
         br.close();
     }
 }
