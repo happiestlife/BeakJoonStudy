@@ -1,3 +1,5 @@
+// https://www.acmicpc.net/problem/7662
+
 package Gold;
 
 import java.io.*;

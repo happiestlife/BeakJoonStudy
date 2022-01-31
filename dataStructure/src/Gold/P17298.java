@@ -1,13 +1,14 @@
-package Sliver;
+// https://www.acmicpc.net/problem/17298
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+package Gold;
+
+import java.io.*;
 import java.util.Stack;
 
 public class P17298 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         Stack<Integer> result = new Stack<>();
         Stack<Integer> stack = new Stack<>();
         int N = Integer.parseInt(br.readLine());
@@ -25,9 +26,11 @@ public class P17298 {
         }
 
         while (!result.isEmpty()) {
-            System.out.print(result.pop() + " ");
+            bw.write(result.pop() + " ");
         }
 
+        bw.flush();
         br.close();
+        bw.close();
     }
 }

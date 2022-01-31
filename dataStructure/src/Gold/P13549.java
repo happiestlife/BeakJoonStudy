@@ -1,3 +1,5 @@
+// https://www.acmicpc.net/problem/13549
+
 package Gold;
 
 import java.io.BufferedReader;
