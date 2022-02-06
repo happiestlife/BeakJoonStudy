@@ -1,3 +1,5 @@
+// https://www.acmicpc.net/problem/1260
+
 package Gold;
 
 import java.io.*;
@@ -22,19 +24,18 @@ public class P1260 {
     }
     public static void bfs(int start) throws IOException {
         Queue<Integer> q = new LinkedList<>();
-        isVisited[start] = true;
         q.add(start);
 
         while (!q.isEmpty()) {
             int v = q.poll();
+            if(isVisited[v] == true) continue;
 
+            isVisited[v] = true;
             bw.write(v + " ");
 
             for(int to : graph[v]){
-                if(isVisited[to] == false) {
-                    isVisited[to] = true;
+                if(isVisited[to] == false)
                     q.add(to);
-                }
             }
         }
     }

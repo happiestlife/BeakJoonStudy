@@ -1,3 +1,5 @@
+//https://www.acmicpc.net/problem/14502
+
 package Gold;
 
 import java.awt.*;
