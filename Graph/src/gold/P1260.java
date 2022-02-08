@@ -1,6 +1,6 @@
 // https://www.acmicpc.net/problem/1260
 
-package Gold;
+package gold;
 
 import java.io.*;
 import java.util.ArrayList;

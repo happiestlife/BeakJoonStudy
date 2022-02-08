@@ -1,6 +1,6 @@
 // https://www.acmicpc.net/problem/7576
 
-package Gold;
+package gold;
 
 import java.awt.*;
 import java.io.BufferedReader;
